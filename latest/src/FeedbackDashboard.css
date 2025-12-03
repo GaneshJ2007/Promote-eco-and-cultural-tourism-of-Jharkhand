@@ -1,0 +1,52 @@
+.dashboard-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.chart-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.table-section {
+  margin-top: 20px;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.table-section th, .table-section td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table-section th {
+  background-color: #2563eb;
+  color: white;
+}
+
+.positive {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.negative {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.neutral {
+  color: #eab308;
+  font-weight: bold;
+}

@@ -1,0 +1,94 @@
+/* Page layout - centers everything */
+body {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  min-height: 100vh;         /* full viewport height */
+  margin: 0;                 /* remove default margin */
+  background: #f3f4f6;       /* optional light background */
+  font-family: Arial, sans-serif;
+}
+
+/* Container styling */
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 400px;
+  text-align: left;
+}
+
+/* Heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+/* Labels */
+.form-container label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Input fields and textarea */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+.form-container button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-container button:hover {
+  background: #1d4ed8;
+}
+
+/* 5-Star Rating container */
+.star-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+/* Each star */
+.star-rating span {
+  font-size: 28px;
+  cursor: pointer;
+  color: #d1d5db; /* gray default */
+  margin-right: 5px;
+  transition: color 0.2s;
+  user-select: none; /* prevent text selection */
+}
+
+/* Filled star */
+.star-rating span.filled {
+  color: #FFD700; /* gold for selected/touched stars */
+}
+
+/* Numeric rating next to stars */
+.star-rating span:last-child {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #374151;
+}
